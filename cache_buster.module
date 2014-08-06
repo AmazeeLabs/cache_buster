@@ -1,0 +1,9 @@
+<?php
+/**
+ * Implements template_process_html().
+ *
+ * Remove Query Strings from CSS filenames (Cache Buster)
+ */
+function cache_buster_process_html(&$variables) {
+  $variables['styles'] = preg_replace('/\.css\?.*"/','.css"', $variables['styles']);
+}

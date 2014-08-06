@@ -1,0 +1,4 @@
+name = Cache Buster
+description = Removes the query after the .css for theming with DevTools or other live edit tools.
+core = 7.x
+package = Custom
